@@ -1,0 +1,6 @@
+//HIDE OPTIONS IF CLICKED ANYWHERE ELSE ON PAGE
+  jQuery(document).bind('click', function(e) {
+      var $clicked = jQuery(e.target);
+      if (! $clicked.parents().hasClass("drop-down"))
+          jQuery(".drop-down .options").hide();
+  });
